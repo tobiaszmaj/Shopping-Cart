@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vanilla JS Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-container">
+
+        <section class="section">
+            <h2 class="section__title">Products</h2>
+            <div class="products">
+                <div class="product">
+                    <div class="product__image">
+                        <img src="img/cyberpunk-2077.jpg" alt="Cyberpunk 2077">
+                    </div>
+                    <h2 class="product__name">Cyberpunk 2077</h2>
+                    <h3 class="product__price">100</h3>
+                    <button class="btn btn--primary product__btn" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="img/forza-horizon-4.jpg" alt="Forza Horizon 4">
+                    </div>
+                    <h2 class="product__name">Forza Horizon 4</h2>
+                    <h3 class="product__price">35</h3>
+                    <button class="btn btn--primary product__btn" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="img/god-of-war-4.jpg" alt="God of War 4">
+                    </div>
+                    <h2 class="product__name">God of War 4</h2>
+                    <h3 class="product__price">120</h3>
+                    <button class="btn btn--primary product__btn" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="img/grand-theft-auto-v.jpg" alt="Grand Theft Auto V">
+                    </div>
+                    <h2 class="product__name">Grand Theft Auto V</h2>
+                    <h3 class="product__price">50</h3>
+                    <button class="btn btn--primary product__btn" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="img/super-mario-maker-2.jpg" alt="Super Mario Maker 2">
+                    </div>
+                    <h2 class="product__name">Super Mario Maker 2</h2>
+                    <h3 class="product__price">110</h3>
+                    <button class="btn btn--primary product__btn" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="img/the-witcher-3.jpg" alt="The Witcher 3">
+                    </div>
+                    <h2 class="product__name">The Witcher 3</h2>
+                    <h3 class="product__price">120</h3>
+                    <button class="btn btn--primary product__btn" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Cart</h2>
+            <div class="cart"></div>
+            <div class="cart-footer">
+                <button class="btn btn btn--danger" data-action="CLEAR_CART" disabled>&#10006; Clear Cart</button>
+                <h2 class="section__title">Total: $<span class="cart-footer__total">0</span></h2>
+                <button class="btn btn btn--primary btn--pay" data-action="CHECKOUT" disabled>&#10004; Pay with
+                    PayPal&trade;</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
