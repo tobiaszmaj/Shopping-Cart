@@ -1,4 +1,4 @@
-# Portfolio
+# Shopping cart
 
 ### See [DEMO](https://tobiaszmaj.github.io/Shopping-Cart/)
 
